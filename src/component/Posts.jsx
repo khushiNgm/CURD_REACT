@@ -43,7 +43,7 @@ export const Posts =()=>{
          {data.map((curElm) => {
           const { id, title, body } = curElm;
           return (
-            <div  className='ml-[30px]'>
+            <div  className='ml-[40px]'>
             <li key={id} className='bg-blue-950 rounded-lg p-4 shadow-black shadow-lg border-2 border-white'>
               <p className='text-white sm:text-base md:text-lg font-semibold'>Title: {title}</p>
               <p className='text-white'>Body: {body}</p>
