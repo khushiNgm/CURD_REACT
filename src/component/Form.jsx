@@ -31,7 +31,7 @@ import { postData} from '../api/PostApi';
     };
     return(
         
-        <section className="bg-blue-900 flex gap-5 mt-3 p-5 ">  
+        <section className="bg-blue-900 flex gap-5 mt-3 p-5 ml-[10px] ">  
         <form action="" onSubmit={handleFormSubmit} className="flex gap-5 justify-center items-center">
             <div>
             <label htmlFor=""></label>
