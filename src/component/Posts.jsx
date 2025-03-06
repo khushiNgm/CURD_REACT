@@ -15,8 +15,7 @@ export const Posts =()=>{
         useEffect(()=> {
          getPostData();
         },[]);
-
-                  //  function for delete post
+                     //  function for delete post
             
               const deleteHandler = async(id)=>{
                 try{   
@@ -38,7 +37,7 @@ export const Posts =()=>{
       return (
         <>
             <section className="ml-[50px] sm:px-6 md:px-8"><Form data={data} setData={setData}/></section>
-     <section className='w-full max-w-screen-lg mx-auto mt-6'>
+     <section className='w-full max-w-screen-lg mx-auto mt-6 ml-10px'>
       <ol className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 list-decimal list-inside text-white'>
          {data.map((curElm) => {
           const { id, title, body } = curElm;
