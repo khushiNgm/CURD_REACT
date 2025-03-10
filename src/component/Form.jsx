@@ -29,26 +29,24 @@ import { postData} from '../api/PostApi';
       e.preventDefault();
       addPostData();
     };
-    return(
-        
-        <section className="flex gap-5 mt-3 p-5 ml-[20px] p-[3px] ">  
+    return( 
+        <section className="flex gap-5 mt-3 p-5 p-10 flex-col "> 
+        <div>
         <form action="" onSubmit={handleFormSubmit} className="flex gap-5 justify-center items-center">
             <div>
             <label htmlFor=""></label>
             <input type="text" placeholder="Add title" className="pl-3 rounded-lg" name="title" value={addData.title} onChange={handleInputChange}/>
-            </div>
+            </div> 
            <div>
            <label htmlFor=""></label>
            <input type="text" placeholder="Add body" className="pl-3 rounded-lg" name="body" value={addData.body} onChange={handleInputChange}/>
            </div>
-           <button className="p-2 bg-green-400  rounded-lg hover:text-white hover:bg-green-700">ADD</button>
         </form>
-      
-     
-      
-        </section>
+        </div> 
+        <div className="flex justify-center items-center">
+        <button className="p-2 bg-green-400  rounded-lg hover:text-white hover:bg-green-700">ADD</button>
+        </div>
+       </section>
     );
 }
-
-
 export default Form;
