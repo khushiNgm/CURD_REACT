@@ -1,8 +1,9 @@
-version: 3.8
+version: "3.8"
+
 services:
   frontend:
     build: .
-    container_name: curd-aap
+    container_name: curd-app
     ports:
-      - 3000:80 
+      - "3000:80"
       
