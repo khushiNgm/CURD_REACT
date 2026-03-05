@@ -1,10 +1,8 @@
 name: React App Deploment CI-CD
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build-test-deploy:
     runs-on: ubuntu-latest
